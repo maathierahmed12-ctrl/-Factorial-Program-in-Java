@@ -8,9 +8,9 @@ public class Count7 {
         }
         int lastDigit = n % 10;
 
-        if(lastDigit == 7){
+        if(lastDigit == 7) {
             return 1 + Count7(n / 10);
-    else{
+        else{
 
         }
     }
