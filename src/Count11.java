@@ -1,0 +1,30 @@
+public class Count11 {
+
+    public int count11(String str) {
+
+        if (str.length() < 2) {
+            return 0;
+        }
+
+        if (str.substring(0, 2).equals("11")) {
+
+            return 1 + count11(str.substring(2));
+        }
+
+        return count11(str.substring(1));
+    }
+    public class Count11Demo {
+
+        public static void main(String[] args) {
+
+            Count11 counter = new Count11();
+
+            System.out.println("count11(\"11abc11\") = " + counter.count11("11abc11"));
+
+            System.out.println("count11(\"abc11x11x11\") = " + counter.count11("abc11x11x11"));
+
+            System.out.println("count11(\"111\") = " + counter.count11("111"));
+        }
+            }
+        }
+
